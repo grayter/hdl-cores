@@ -1,0 +1,36 @@
+CAPI=1
+
+[main]
+name=osvvm:osvvm:osvvm:2016.11-r0
+simulators=modelsim
+
+[fileset tb]
+files =
+  NamePkg.vhd
+  OsvvmGlobalPkg.vhd
+  VendorCovApiPkg.vhd
+  TranscriptPkg.vhd
+  TextUtilPkg.vhd
+  AlertLogPkg.vhd
+  MessagePkg.vhd
+  SortListPkg_int.vhd
+  RandomBasePkg.vhd
+  RandomPkg.vhd
+  CoveragePkg.vhd
+  MemoryPkg.vhd
+  ScoreboardGenericPkg.vhd
+  ScoreboardPkg_slv.vhd
+  ScoreboardPkg_int.vhd
+  ResolutionPkg.vhd
+  TbUtilPkg.vhd
+  OsvvmContext.vhd
+file_type = vhdlSource-2008
+logical_name = osvvm
+usage = sim
+
+[provider]
+name=github
+user=OSVVM
+repo=OSVVM
+version=2016.11
+cachable=true

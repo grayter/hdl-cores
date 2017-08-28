@@ -1,0 +1,36 @@
+CAPI=1
+
+[main]
+name=grayter:utility:avalon_stream_forker:0.1-r0
+depend=grayter:types:bus_data_types
+simulators=modelsim
+
+[fileset rtl]
+files = rtl/avalon_stream_forker.vhd
+file_type = vhdlSource-2008
+logical_name = utility
+
+[fileset test]
+files = sim/test_ctrl.vhd
+file_type = vhdlSource-2008
+logical_name = test
+usage = sim
+
+[fileset tb]
+files = sim/avalon_stream_forker_tb.vhd
+file_type = vhdlSource-2008
+usage = sim
+scope = private
+
+[simulator]
+toplevel = avalon_stream_forker_tb
+
+[modelsim]
+depend=osvvm:osvvm:osvvm:2016.11 grayter:bfm:avalon_source_bfm grayter:bfm:avalon_sink_bfm
+
+[provider]
+name=github
+user=grayter
+repo=avalon_stream_forker
+version=release_0
+cachable=true

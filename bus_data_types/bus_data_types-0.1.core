@@ -1,0 +1,16 @@
+CAPI=1
+
+[main]
+name=grayter:types:bus_data_types:0.1-r0
+
+[fileset types]
+files = types/data_types_pkg.vhd
+file_type = vhdlSource-2008
+logical_name = types
+
+[provider]
+name=github
+user=grayter
+repo=bus_data_types
+version=release_0
+cachable=true

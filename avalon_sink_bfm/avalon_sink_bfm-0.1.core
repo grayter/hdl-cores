@@ -1,0 +1,20 @@
+CAPI=1
+
+[main]
+name=grayter:bfm:avalon_sink_bfm:0.1-r0
+depend=osvvm:osvvm:osvvm:2016.11 grayter:types:bus_data_types
+simulators=modelsim
+
+[fileset bfm]
+files = bfm/avalon_sink_bfm.vhd
+file_type = vhdlSource-2008
+logical_name = bfm
+usage = sim
+scope = public
+
+[provider]
+name=github
+user=grayter
+repo=avalon_sink_bfm
+version=release_0
+cachable=true
