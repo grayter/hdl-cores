@@ -12,5 +12,5 @@ logical_name = types
 name=github
 user=grayter
 repo=bus_data_types
-version=release_0
+version=v0.1
 cachable=true

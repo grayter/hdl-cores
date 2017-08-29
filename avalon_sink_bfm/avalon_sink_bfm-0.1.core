@@ -16,5 +16,5 @@ scope = public
 name=github
 user=grayter
 repo=avalon_sink_bfm
-version=release_0
+version=v0.1
 cachable=true

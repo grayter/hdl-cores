@@ -32,5 +32,5 @@ depend=osvvm:osvvm:osvvm:2016.11 grayter:bfm:avalon_source_bfm grayter:bfm:avalo
 name=github
 user=grayter
 repo=avalon_stream_forker
-version=release_0
+version=v0.1
 cachable=true
